@@ -11,6 +11,8 @@ using DylanBookStore.DataAccess.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using DylanBookStore.DataAccess.Repository.IRepository;
+using DylanBookStore.DataAccess.Repository;
 
 namespace DylanBookStore
 {
@@ -33,6 +35,7 @@ namespace DylanBookStore
 
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
         }
 
