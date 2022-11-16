@@ -1,0 +1,10 @@
+-------------------------
+16-11-2022
+- 2:12 PM
+  started working on part 2.
+- 2:25 PM
+  created migration, a bit tricky with Mac, needed to rely on dotnet CLI.
+
+
+
+
