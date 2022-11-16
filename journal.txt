@@ -4,6 +4,10 @@
   started working on part 2.
 - 2:25 PM
   created migration, a bit tricky with Mac, needed to rely on dotnet CLI.
+- 2:40 PM
+  pushed commits to github and start section 2.2
+- 3:22 PM
+  created repositories for base repo and category
 
 
 
