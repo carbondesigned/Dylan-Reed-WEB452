@@ -10,6 +10,24 @@
   created repositories for base repo and category
 - 3:34 PM 1534
   implemented UnitOfWork files
+=============================================================================
+27-11-2022
+- 1406
+    started working on part 3
+- 1410
+    Category and covertype CRUD functionality
+- 1415
+    product controller and IProduct added to UnitOfWork
+- 1524
+    finished part 3
+=============================================================================
+3-12-2022
+- 1327
+    started working on part 4
+- 1342
+    create product complete CRUD functionality
+- 1350
+    seeded product db
 
 
 
