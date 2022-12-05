@@ -1,27 +1,32 @@
-﻿using System;
+﻿using DylanBookStore.DataAccess.Repository.IRepository;
+using DylanBookStore.Models;
+using DylanBookStore.Models.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using DylanBookStore.Models.ViewModels;
 
-namespace DylanBookStore.Controllers
+namespace BulkyBook.Ares.Customer.Controllers
 {
-    [Area("Customers")]
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IUnitOfWork _unifOfWork;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IUnitOfWork unifOfWork)
         {
             _logger = logger;
+            _unifOfWork = unifOfWork;
         }
 
         public IActionResult Index()
         {
-            return View();
+            IEnumerable<Product> productList = _unifOfWork.Product.GetAll(includeProperties: "Category,CoverType");
+            return View(productList);
         }
 
         public IActionResult Privacy()
@@ -36,4 +41,3 @@ namespace DylanBookStore.Controllers
         }
     }
 }
-

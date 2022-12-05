@@ -1,14 +1,14 @@
 -------------------------
 16-11-2022
-- 2:12 PM
+- 2:12 PM 1412
   started working on part 2.
-- 2:25 PM
+- 2:25 PM 1425
   created migration, a bit tricky with Mac, needed to rely on dotnet CLI.
-- 2:40 PM
+- 2:40 PM 1440
   pushed commits to github and start section 2.2
-- 3:22 PM
+- 3:22 PM 1522
   created repositories for base repo and category
-- 3:34 PM
+- 3:34 PM 1534
   implemented UnitOfWork files
 
 
