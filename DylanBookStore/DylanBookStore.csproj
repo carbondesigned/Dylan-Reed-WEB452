@@ -24,6 +24,8 @@
     <None Remove="Views\" />
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
     <None Remove="Dapper" />
+    <None Remove="System.ComponentModel.Annotations" />
+    <None Remove="Microsoft.AspNetCore.Mvc.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
@@ -53,6 +55,8 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.DataAnnotations" Version="2.2.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Customers\" />

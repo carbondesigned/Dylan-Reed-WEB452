@@ -28,7 +28,19 @@
     create product complete CRUD functionality
 - 1350
     seeded product db
-
+=============================================================================
+6-12-2022
+- 1330
+    started working on part 5, read submission details
+- 1340
+    start of final touches on part 5
+- 1350
+    fixing build errors (data annotations)
+- 1355
+    struggled with versioning of the project. I've heard from different places to scaffold the project with 5.1 which is obviously depricated, 
+    but now I believe I am having these issues because of the version where 3.1 would not have these issues.
+    With that being said I cannot build my project and therefore cannot create migartions.
+    All of these issues also might be a root cause due to Mac OS's version of Visual Studio.
 
 
 

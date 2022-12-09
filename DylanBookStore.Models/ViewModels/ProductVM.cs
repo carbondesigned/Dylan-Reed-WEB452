@@ -1,5 +1,5 @@
 ﻿using DylanBookStore.Models;
-using As
+using System.Web;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +10,9 @@ namespace DylanBookStore.Models.ViewModels
 {
     public class ProductVM
     {
+        // SelectListItem doesn't work
         public Product Product { get; set; }
-        public IEnumerable<SelectListItem> CategoryList { get; set; }
-        public IEnumerable<SelectListItem> CoverTypeList { get; set; }
+        public IEnumerable<List<string>> CategoryList { get; set; }
+        public IEnumerable<List<string>> CoverTypeList { get; set; }
     }
 }
